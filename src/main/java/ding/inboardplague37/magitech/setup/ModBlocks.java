@@ -1,4 +1,4 @@
-package setup;
+package ding.inboardplague37.magitech.setup;
 
 import java.util.function.Supplier;
 

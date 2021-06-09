@@ -1,11 +1,9 @@
 package ding.inboardplague37.magitech;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -15,11 +13,12 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import setup.ModItems;
-import setup.Registration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import ding.inboardplague37.magitech.setup.ModItems;
+import ding.inboardplague37.magitech.setup.Registration;
 
 import java.util.stream.Collectors;
 
@@ -69,7 +68,7 @@ public class MagiTechMod
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+//        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

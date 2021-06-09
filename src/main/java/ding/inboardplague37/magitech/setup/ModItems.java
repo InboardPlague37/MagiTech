@@ -1,4 +1,4 @@
-package setup;
+package ding.inboardplague37.magitech.setup;
 
 import ding.inboardplague37.magitech.MagiTechMod;
 import net.minecraft.item.Item;
