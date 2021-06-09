@@ -16,5 +16,6 @@ public class Registration {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		
 		ModItems.register();
+		ModBlocks.register();
 	}
 }
