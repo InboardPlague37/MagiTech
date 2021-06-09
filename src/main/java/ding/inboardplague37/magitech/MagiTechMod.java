@@ -2,6 +2,8 @@ package ding.inboardplague37.magitech;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import setup.ModItems;
 import setup.Registration;
 
 import org.apache.logging.log4j.LogManager;
@@ -25,6 +28,7 @@ import java.util.stream.Collectors;
 public class MagiTechMod
 {
 	public static final String MOD_ID = "magitech";
+	public static final ItemGroup TAB_MAGITECH = new MagiTechGroup("MagiTech");
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -41,6 +45,19 @@ public class MagiTechMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+    }
+    
+    public static class MagiTechGroup extends ItemGroup {
+
+		public MagiTechGroup(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack makeIcon() {
+			return ModItems.CRYSTALIZED_MANA.get().getDefaultInstance();
+		}
+    	
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -73,16 +90,5 @@ public class MagiTechMod
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
-    }
-
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
-            LOGGER.info("HELLO from Register Block");
-        }
     }
 }

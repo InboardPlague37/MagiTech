@@ -2,12 +2,12 @@ package setup;
 
 import java.util.function.Supplier;
 
+import ding.inboardplague37.magitech.MagiTechMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlocks {
@@ -22,7 +22,7 @@ public class ModBlocks {
 	
 	private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
 		RegistryObject<T> ret = registerNoItem(name, block);
-		Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
+		Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().tab(MagiTechMod.TAB_MAGITECH)));
 		return ret;
 	}
 }
