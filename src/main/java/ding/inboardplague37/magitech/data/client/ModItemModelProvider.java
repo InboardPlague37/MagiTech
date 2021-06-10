@@ -15,10 +15,12 @@ public class ModItemModelProvider extends ItemModelProvider{
 	@Override
 	protected void registerModels() {
 		withExistingParent("crystalized_mana_ore", modLoc("block/crystalized_mana_ore"));
+		withExistingParent("crystalized_mana_block", modLoc("block/crystalized_mana_block"));
 		
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 		
 		builder(itemGenerated, "crystalized_mana");
+		builder(itemGenerated, "crystalized_mana_fragment");
 	}
 	
 	private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

@@ -1,5 +1,7 @@
 {
     "item.magitech.crystalized_mana": "Crystalized Mana",
+    "item.magitech.crystalized_mana_fragment": "Crystalized Mana Fragment",
     "block.magitech.crystalized_mana_ore": "Crystalized Mana Ore",
+    "block.magitech.crystalized_mana_block": "Crystalized Mana Block",
     "itemGroup.MagiTech": "MagiTech"
 }

@@ -8,5 +8,8 @@ public class ModItems {
 	public static final RegistryObject<Item> CRYSTALIZED_MANA = Registration.ITEMS.register("crystalized_mana", () ->
 			new Item(new Item.Properties().tab(MagiTechMod.TAB_MAGITECH)));
 	
+	public static final RegistryObject<Item> CRYSTALIZED_MANA_FRAGMENT = Registration.ITEMS.register("crystalized_mana_fragment", () ->
+			new Item(new Item.Properties().tab(MagiTechMod.TAB_MAGITECH)));
+	
 	static void register() {}
 }

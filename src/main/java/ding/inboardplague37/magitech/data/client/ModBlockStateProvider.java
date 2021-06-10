@@ -15,6 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 	@Override
 	protected void registerStatesAndModels() {
 		simpleBlock(ModBlocks.CRYSTALIZED_MANA_ORE.get());
+		simpleBlock(ModBlocks.CRYSTALIZED_MANA_BLOCK.get());
 	}
 
 }

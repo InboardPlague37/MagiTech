@@ -14,6 +14,9 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CRYSTALIZED_MANA_ORE = register("crystalized_mana_ore", () ->
 			new Block(AbstractBlock.Properties.of(Material.STONE).strength(2).harvestLevel(2)));
 	
+	public static final RegistryObject<Block> CRYSTALIZED_MANA_BLOCK = register("crystalized_mana_block", () ->
+			new Block(AbstractBlock.Properties.of(Material.METAL).strength(2)));
+	
 	static void register() {}
 	
 	private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block) {
