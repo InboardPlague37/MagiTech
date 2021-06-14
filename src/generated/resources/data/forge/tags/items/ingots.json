@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ingots/crystalized_mana",
+    "#forge:ingots/crystalized_mana_nugget"
+  ]
+}
