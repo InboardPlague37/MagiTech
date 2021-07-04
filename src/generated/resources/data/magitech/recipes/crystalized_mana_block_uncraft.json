@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magitech:crystalized_mana_block"
+    }
+  ],
+  "result": {
+    "item": "magitech:crystalized_mana",
+    "count": 9
+  }
+}

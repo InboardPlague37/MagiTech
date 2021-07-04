@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magitech:crystalized_mana_fragment"
+    }
+  },
+  "result": {
+    "item": "magitech:crystalized_mana"
+  }
+}

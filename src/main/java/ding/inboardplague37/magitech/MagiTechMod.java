@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 public class MagiTechMod
 {
 	public static final String MOD_ID = "magitech";
-	public static final ItemGroup TAB_MAGITECH = new MagiTechGroup("MagiTech");
+	public static final ItemGroup TAB_MAGITECH = new MagiTechGroup("magitech");
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 

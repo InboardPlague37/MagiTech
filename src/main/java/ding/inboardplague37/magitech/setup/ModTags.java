@@ -1,6 +1,6 @@
 package ding.inboardplague37.magitech.setup;
 
-import ding.inboardplague37.magitech.MagiTechMod;
+//import ding.inboardplague37.magitech.MagiTechMod;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tags.BlockTags;
@@ -17,9 +17,9 @@ public class ModTags {
 			return BlockTags.bind(new ResourceLocation("forge", path).toString());
 		}
 		
-		private static ITag.INamedTag<Block> mod(String path){
-			return BlockTags.bind(new ResourceLocation(MagiTechMod.MOD_ID, path).toString());
-		}
+//		private static ITag.INamedTag<Block> mod(String path){
+//			return BlockTags.bind(new ResourceLocation(MagiTechMod.MOD_ID, path).toString());
+//		}
 	}
 	
 	public static final class Items {
@@ -33,8 +33,8 @@ public class ModTags {
 			return ItemTags.bind(new ResourceLocation("forge", path).toString());
 		}
 		
-		private static ITag.INamedTag<Item> mod(String path){
-			return ItemTags.bind(new ResourceLocation(MagiTechMod.MOD_ID, path).toString());
-		}
+//		private static ITag.INamedTag<Item> mod(String path){
+//			return ItemTags.bind(new ResourceLocation(MagiTechMod.MOD_ID, path).toString());
+//		}
 	}
 }
